@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainView", "MainView\MainView.csproj", "{8FE3A380-3901-474F-808B-037357F40B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{2E31E449-17BF-47E4-845F-C159CE543A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{55FF5C3D-8737-4A1F-8974-F1FB6954FCA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FE3A380-3901-474F-808B-037357F40B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE3A380-3901-474F-808B-037357F40B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE3A380-3901-474F-808B-037357F40B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE3A380-3901-474F-808B-037357F40B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E31E449-17BF-47E4-845F-C159CE543A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E31E449-17BF-47E4-845F-C159CE543A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E31E449-17BF-47E4-845F-C159CE543A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E31E449-17BF-47E4-845F-C159CE543A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FF5C3D-8737-4A1F-8974-F1FB6954FCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FF5C3D-8737-4A1F-8974-F1FB6954FCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FF5C3D-8737-4A1F-8974-F1FB6954FCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FF5C3D-8737-4A1F-8974-F1FB6954FCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78E6BF31-F5EC-4255-B8F5-BAE7B348A184}
+	EndGlobalSection
+EndGlobal
