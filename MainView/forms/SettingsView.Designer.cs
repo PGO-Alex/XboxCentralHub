@@ -38,7 +38,7 @@ namespace MainView.forms
             this.ClientSize = new System.Drawing.Size(360, 480);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SettingsView";
-            this.Text = "CustomXboxCard";
+            this.Text = "Configuracion";
             this.ResumeLayout(false);
 
         }
