@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Controller;
 using Controller.Class;
 using Models.Class;
+using MainView.Properties;
 
 namespace MainView.forms
 {
@@ -23,6 +24,7 @@ namespace MainView.forms
             NewConsoleBuilder();
             HWBox.ReadOnly = true;
             HWBox.Enabled = false;
+            this.Icon = Resources.gamepad128;
         }
 
         private void TopBar_MouseDown(object sender, MouseEventArgs e)

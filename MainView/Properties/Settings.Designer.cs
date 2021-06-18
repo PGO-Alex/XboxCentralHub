@@ -58,5 +58,77 @@ namespace MainView.Properties {
                 this["AppTitle"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.1.1.0 alpha")]
+        public string AppVersion {
+            get {
+                return ((string)(this["AppVersion"]));
+            }
+            set {
+                this["AppVersion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Open Source")]
+        public string Copyright {
+            get {
+                return ((string)(this["Copyright"]));
+            }
+            set {
+                this["Copyright"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("DK Software")]
+        public string CompanyName {
+            get {
+                return ((string)(this["CompanyName"]));
+            }
+            set {
+                this["CompanyName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"Esta aplicacion fue diseñada por Alejandro Guevara, 
+El uso y ejecucion de este software es totalmente 
+libre y responsabilidad de quien lo usa asi como 
+las consecuencias de una mala instalacion o 
+ejecucion, su modificacion no esta permitida, pero 
+si se permite el fork del repositorio donde se 
+contiene el codigo original siempre y cuando se 
+haga mencion del autor y repositorio originales.
+
+El objetivo de esta aplicacion es el de ser una 
+herramienta de gestion para establecimientos 
+donde se rente de forma presencial una consola 
+de videojuegos por un tiempo especificado.")]
+        public string Description {
+            get {
+                return ((string)(this["Description"]));
+            }
+            set {
+                this["Description"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 14.25px")]
+        public global::System.Drawing.Font SettingFont {
+            get {
+                return ((global::System.Drawing.Font)(this["SettingFont"]));
+            }
+            set {
+                this["SettingFont"] = value;
+            }
+        }
     }
 }

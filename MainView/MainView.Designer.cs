@@ -49,8 +49,6 @@ namespace MainView
             this.ColapseButton = new FontAwesome.Sharp.IconButton();
             this.BotPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.modernLabel1 = new DevLib.ModernUI.Forms.ModernLabel();
-            this.AuthorLink = new ReaLTaiizor.Controls.MetroLinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.CheckDBButton = new System.Windows.Forms.Button();
             this.DBstatusLabel = new System.Windows.Forms.Label();
@@ -62,6 +60,8 @@ namespace MainView
             this.MaxButton = new FontAwesome.Sharp.IconButton();
             this.CloseButton = new FontAwesome.Sharp.IconButton();
             this.ClockTimer = new System.Windows.Forms.Timer(this.components);
+            this.AuthorLink = new System.Windows.Forms.LinkLabel();
+            this.CreatedByLabel = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             this.ControlPanel.SuspendLayout();
             this.DataPanel.SuspendLayout();
@@ -349,49 +349,13 @@ namespace MainView
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.modernLabel1);
             this.panel3.Controls.Add(this.AuthorLink);
+            this.panel3.Controls.Add(this.CreatedByLabel);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(227, 30);
+            this.panel3.Size = new System.Drawing.Size(235, 30);
             this.panel3.TabIndex = 5;
-            // 
-            // modernLabel1
-            // 
-            this.modernLabel1.AutoSize = true;
-            this.modernLabel1.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::MainView.Properties.Settings.Default, "SettingTextColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.modernLabel1.ForeColor = global::MainView.Properties.Settings.Default.SettingTextColor;
-            this.modernLabel1.Location = new System.Drawing.Point(3, 5);
-            this.modernLabel1.Name = "modernLabel1";
-            this.modernLabel1.Size = new System.Drawing.Size(124, 19);
-            this.modernLabel1.TabIndex = 8;
-            this.modernLabel1.Text = "Created with ❤ by";
-            this.modernLabel1.UseCustomBackColor = true;
-            this.modernLabel1.UseCustomForeColor = true;
-            this.modernLabel1.UseStyleColors = false;
-            // 
-            // AuthorLink
-            // 
-            this.AuthorLink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AuthorLink.Dock = System.Windows.Forms.DockStyle.Right;
-            this.AuthorLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.AuthorLink.IsDerivedStyle = true;
-            this.AuthorLink.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.AuthorLink.Location = new System.Drawing.Point(118, 0);
-            this.AuthorLink.Name = "AuthorLink";
-            this.AuthorLink.Size = new System.Drawing.Size(109, 30);
-            this.AuthorLink.Style = ReaLTaiizor.Enum.Metro.Style.Dark;
-            this.AuthorLink.StyleManager = null;
-            this.AuthorLink.TabIndex = 9;
-            this.AuthorLink.TabStop = true;
-            this.AuthorLink.Text = "Alex Guevara";
-            this.AuthorLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.AuthorLink.ThemeAuthor = "Taiizor";
-            this.AuthorLink.ThemeName = "MetroLight";
-            this.AuthorLink.UseCompatibleTextRendering = true;
-            this.AuthorLink.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(157)))), ((int)(((byte)(205)))));
-            this.AuthorLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AuthorLink_LinkClicked);
             // 
             // panel1
             // 
@@ -563,6 +527,31 @@ namespace MainView
             this.ClockTimer.Interval = 900;
             this.ClockTimer.Tick += new System.EventHandler(this.ClockTimer_Tick);
             // 
+            // AuthorLink
+            // 
+            this.AuthorLink.AutoSize = true;
+            this.AuthorLink.BackColor = System.Drawing.Color.Transparent;
+            this.AuthorLink.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.AuthorLink.Location = new System.Drawing.Point(128, 4);
+            this.AuthorLink.Name = "AuthorLink";
+            this.AuthorLink.Size = new System.Drawing.Size(89, 19);
+            this.AuthorLink.TabIndex = 9;
+            this.AuthorLink.TabStop = true;
+            this.AuthorLink.Text = "Alex Guevara";
+            this.AuthorLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AuthorLink_LinkClicked);
+            // 
+            // CreatedByLabel
+            // 
+            this.CreatedByLabel.AutoSize = true;
+            this.CreatedByLabel.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::MainView.Properties.Settings.Default, "SettingTextColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.CreatedByLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.CreatedByLabel.ForeColor = global::MainView.Properties.Settings.Default.SettingTextColor;
+            this.CreatedByLabel.Location = new System.Drawing.Point(3, 5);
+            this.CreatedByLabel.Name = "CreatedByLabel";
+            this.CreatedByLabel.Size = new System.Drawing.Size(129, 19);
+            this.CreatedByLabel.TabIndex = 10;
+            this.CreatedByLabel.Text = "Created with ❤ by";
+            // 
             // XboxCentralHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -618,8 +607,6 @@ namespace MainView
         private FontAwesome.Sharp.IconButton AddConsoleButton;
         private System.Windows.Forms.Panel ChildPanelBot;
         private System.Windows.Forms.Panel panel3;
-        private DevLib.ModernUI.Forms.ModernLabel modernLabel1;
-        private ReaLTaiizor.Controls.MetroLinkLabel AuthorLink;
         private FontAwesome.Sharp.IconButton UpdateConsoleList;
         private System.Windows.Forms.MonthCalendar CalendarBox;
         private System.Windows.Forms.Label TimeLabel;
@@ -627,6 +614,8 @@ namespace MainView
         private System.Windows.Forms.Label TimeCounterBox;
         private FontAwesome.Sharp.IconButton AboutThisButton;
         private System.Windows.Forms.Button CheckDBButton;
+        private System.Windows.Forms.LinkLabel AuthorLink;
+        private System.Windows.Forms.Label CreatedByLabel;
     }
 }
 

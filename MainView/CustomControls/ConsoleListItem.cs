@@ -7,11 +7,14 @@ using System.Diagnostics;
 using Controller.Class;
 using Controller;
 using MainView.forms;
+using System.Media;
 
 namespace MainView.CustomControls
 {
     public partial class ConsoleListItem : UserControl
     {
+        public RentContext rentContext = new RentContext();
+        public Rent rent = new Rent();
         public string mensaje = "", status = "";
         public int segs = 00;
         public Alerthandler alerthandler = new Alerthandler();
@@ -103,23 +106,62 @@ namespace MainView.CustomControls
 
         private void RentButton_Click(object sender, EventArgs e)
         {
-            if(RentTimer.Enabled == true)
+
+            string message = "";
+            string caption = "";
+            if (RentButton.Text == "Rentar Consola")
             {
-                RentTimer.Enabled = false;
-                RentTimeBox.Text = "00:00:00";
-                RentButton.Text = "Rentar Consola";
-                RentButton.BackColor = Color.Transparent;
-                RentButton.ForeColor = Color.Black;
-                RentButton.IconColor = Color.Black;
+                message = "Iniciar renta en la consola " + CurrentConsol.Nombre + "\nCon IP: " + CurrentConsol.Ip;
+                caption = "Rentar Consola?";
             }
-            else if (RentTimer.Enabled == false)
+            else
             {
-                RentTimer.Enabled = true;
-                segs = 00;
-                RentButton.Text = "Detener Renta";
-                RentButton.BackColor = Color.Crimson;
-                RentButton.ForeColor = Color.White;
-                RentButton.IconColor = Color.White;
+                message = "Detener renta en la consola " + CurrentConsol.Nombre + "\nCon IP: " + CurrentConsol.Ip;
+                caption = "Detener renta?";
+            }
+            if (RentTypeBox.SelectedItem != null)
+            {
+                SystemSounds.Exclamation.Play();
+                DialogResult result = MessageBox.Show(message, caption, MessageBoxButtons.OKCancel);
+
+                if (result == DialogResult.OK)
+                {
+                    if (RentTimer.Enabled == true)
+                    {
+                        rent.TimeFinish = TimeSpan.Parse(DateTime.Now.ToString("HH:mm:ss"));
+                        rent.TimeWorked = DateTime.Parse(rent.TimeFinish.ToString()).Subtract(DateTime.Parse(rent.TimeStart.ToString()));
+                        rentContext.InsertRent(rent);
+                        TimeToRentBox.Enabled = true;
+                        RentTypeBox.Enabled = true;
+                        RentTimer.Enabled = false;
+                        RentTimeBox.Text = "00:00:00";
+                        RentButton.Text = "Rentar Consola";
+                        RentButton.BackColor = Color.Transparent;
+                        RentButton.ForeColor = Color.Black;
+                        RentButton.IconColor = Color.Black;
+                    }
+                    else if (RentTimer.Enabled == false)
+                    {
+                        TimeToRentBox.Enabled = false;
+                        RentTypeBox.Enabled = false;
+                        RentTimeBox.ForeColor = Color.Black;
+                        rent.StartTime = DateTime.Now;
+                        rent.ConsolaId = CurrentConsol.Id;
+                        rent.NombreConsola = CurrentConsol.Nombre;
+                        rent.RentInfo = RentTypeBox.Text;
+                        rent.TimeStart = TimeSpan.Parse(DateTime.Now.ToString("HH:mm:ss"));
+                        RentTimer.Enabled = true;
+                        segs = 00;
+                        RentButton.Text = "Detener Renta";
+                        RentButton.BackColor = Color.Crimson;
+                        RentButton.ForeColor = Color.White;
+                        RentButton.IconColor = Color.White;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("El tipo de renta no pueden estar vacio");
+                }
             }
         }
 
@@ -127,6 +169,12 @@ namespace MainView.CustomControls
         {
             segs++;
             RentTimeBox.Text = TimeSpan.FromSeconds(segs).ToString(@"hh\:mm\:ss");
+            if(TimeSpan.Parse(RentTimeBox.Text) == TimeSpan.Parse(TimeToRentBox.Text))
+            {
+                RentTimeBox.ForeColor = Color.Crimson;
+                SystemSounds.Exclamation.Play();
+                MessageBox.Show("Tiempo en la consola " + CurrentConsol.Nombre + " finalizo", "Alerta de tiempo finalizado");
+            }
         }
 
         private void CheckConn_Tick(object sender, EventArgs e)

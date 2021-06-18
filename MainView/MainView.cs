@@ -9,7 +9,6 @@ using Controller;
 using System.Collections.Generic;
 using MainView.CustomControls;
 using Controller.Class;
-using System.IO;
 
 namespace MainView
 {
@@ -27,7 +26,7 @@ namespace MainView
         public XboxCentralHub()
         {
             InitializeComponent();
-            Icon = Properties.Resources.xbox5;
+            Icon = Properties.Resources.gamepad128;
             CheckDBstatus();
             AddControls();
             ClockTimer.Enabled = true;
@@ -152,6 +151,11 @@ namespace MainView
 
         private void UpdateConsoleList_Click(object sender, EventArgs e)
         {
+            var controls = ChildPanelBot.Controls;
+            foreach (Control item in controls)
+            {
+                item.Dispose();
+            }
             ChildPanelBot.Controls.Clear();
             if (ChildPanelBot.Controls.Count == 0)
             {
@@ -175,7 +179,9 @@ namespace MainView
 
         private void GenReportButton_Click(object sender, EventArgs e)
         {
-
+            ReportContext report = new ReportContext();
+            SaveFileDialog fileDialog = new SaveFileDialog();
+            report.BuildPDF();
         }
 
         public void TimeChange()
@@ -216,6 +222,11 @@ namespace MainView
                     ChildPanelBot.Controls.Add(item);
                 }
             }
+        }
+
+        private void Disposer(object sender, System.EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

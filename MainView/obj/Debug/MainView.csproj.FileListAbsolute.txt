@@ -1,15 +1,10 @@
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Xbox Central Hub.exe.config
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Xbox Central Hub.exe
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Xbox Central Hub.pdb
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\AdamsLair.WinForms.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Controller.dll
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\DevLib.ModernUI.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Models.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\MySql.Data.dll
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\ObjectListView.dll
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\PopupControl.dll
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\ReaLTaiizor.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Google.Protobuf.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Zstandard.Net.dll
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\K4os.Compression.LZ4.Streams.dll
@@ -24,13 +19,7 @@ C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\System.Numeric
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Controller.pdb
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Controller.dll.config
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Models.pdb
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\AdamsLair.WinForms.pdb
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\AdamsLair.WinForms.xml
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\DevLib.ModernUI.xml
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\MySql.Data.xml
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\ObjectListView.xml
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\PopupControl.pdb
-C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\ReaLTaiizor.xml
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.csprojAssemblyReference.cache
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.CustomControls.AlertRow.resources
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.CustomControls.ConsoleListItem.resources
@@ -45,3 +34,18 @@ C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.cspro
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\Xbox Central Hub.exe
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\Xbox Central Hub.pdb
 C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.forms.EditConsole.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.CustomControls.ColorOption.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Debug\MainView.CustomControls.ImageListItem.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\itext.kernel.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\itext.layout.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Common.Logging.Core.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\itext.io.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Common.Logging.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\itext.kernel.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\itext.layout.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Common.Logging.Core.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Common.Logging.Core.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\itext.io.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Common.Logging.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Debug\Common.Logging.xml

@@ -11,5 +11,32 @@
     <Setting Name="AppTitle" Type="System.String" Scope="User">
       <Value Profile="(Default)">Xbox Central Hub</Value>
     </Setting>
+    <Setting Name="AppVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.1.1.0 alpha</Value>
+    </Setting>
+    <Setting Name="Copyright" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Open Source</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DK Software</Value>
+    </Setting>
+    <Setting Name="Description" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Esta aplicacion fue diseñada por Alejandro Guevara, 
+El uso y ejecucion de este software es totalmente 
+libre y responsabilidad de quien lo usa asi como 
+las consecuencias de una mala instalacion o 
+ejecucion, su modificacion no esta permitida, pero 
+si se permite el fork del repositorio donde se 
+contiene el codigo original siempre y cuando se 
+haga mencion del autor y repositorio originales.
+
+El objetivo de esta aplicacion es el de ser una 
+herramienta de gestion para establecimientos 
+donde se rente de forma presencial una consola 
+de videojuegos por un tiempo especificado.</Value>
+    </Setting>
+    <Setting Name="SettingFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Segoe UI, 14.25px</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -1,0 +1,6 @@
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\Models\bin\Release\Models.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\Models\bin\Release\Models.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\Models\obj\Release\Models.csprojAssemblyReference.cache
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\Models\obj\Release\Models.csproj.CoreCompileInputs.cache
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\Models\obj\Release\Models.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\Models\obj\Release\Models.pdb

@@ -109,7 +109,7 @@ namespace MainView.forms
             this.SaveConsoleButton.TabIndex = 23;
             this.SaveConsoleButton.Text = "Guardar Consola";
             this.SaveConsoleButton.UseCompatibleTextRendering = true;
-            this.SaveConsoleButton.UseVisualStyleBackColor = true;
+            this.SaveConsoleButton.UseVisualStyleBackColor = false;
             this.SaveConsoleButton.Click += new System.EventHandler(this.SaveConsoleButton_Click);
             // 
             // DisplayPassButton
@@ -150,13 +150,16 @@ namespace MainView.forms
             // 
             // ChangeImageButton
             // 
-            this.ChangeImageButton.BackColor = System.Drawing.Color.Black;
+            this.ChangeImageButton.BackColor = global::MainView.Properties.Settings.Default.SettingBackColor;
+            this.ChangeImageButton.DataBindings.Add(new System.Windows.Forms.Binding("IconColor", global::MainView.Properties.Settings.Default, "SettingTextColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ChangeImageButton.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::MainView.Properties.Settings.Default, "SettingTextColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ChangeImageButton.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::MainView.Properties.Settings.Default, "SettingBackColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.ChangeImageButton.FlatAppearance.BorderSize = 0;
             this.ChangeImageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChangeImageButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.ChangeImageButton.ForeColor = System.Drawing.Color.White;
+            this.ChangeImageButton.ForeColor = global::MainView.Properties.Settings.Default.SettingTextColor;
             this.ChangeImageButton.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            this.ChangeImageButton.IconColor = System.Drawing.Color.White;
+            this.ChangeImageButton.IconColor = global::MainView.Properties.Settings.Default.SettingTextColor;
             this.ChangeImageButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.ChangeImageButton.IconSize = 20;
             this.ChangeImageButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -396,10 +399,11 @@ namespace MainView.forms
             // 
             // TopBar
             // 
-            this.TopBar.BackColor = System.Drawing.Color.Black;
+            this.TopBar.BackColor = global::MainView.Properties.Settings.Default.SettingBackColor;
             this.TopBar.Controls.Add(this.panel1);
             this.TopBar.Controls.Add(this.MinButton);
             this.TopBar.Controls.Add(this.CloseButton);
+            this.TopBar.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::MainView.Properties.Settings.Default, "SettingBackColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.TopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopBar.Location = new System.Drawing.Point(0, 0);
             this.TopBar.Name = "TopBar";
@@ -420,8 +424,10 @@ namespace MainView.forms
             // 
             this.TitleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.TitleLabel.AutoSize = true;
+            this.TitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TitleLabel.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::MainView.Properties.Settings.Default, "SettingTextColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.TitleLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.TitleLabel.ForeColor = System.Drawing.Color.White;
+            this.TitleLabel.ForeColor = global::MainView.Properties.Settings.Default.SettingTextColor;
             this.TitleLabel.Location = new System.Drawing.Point(8, 6);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(169, 19);

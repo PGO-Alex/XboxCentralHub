@@ -17,8 +17,10 @@ namespace Controller
         public List<Consola> GetConsola(int Id)
         {
             string query = "SELECT * FROM Consolas WHERE Id="+Id;
-            MySqlCommand command = new MySqlCommand(query, sqlConnection);
-            command.CommandTimeout = 60;
+            MySqlCommand command = new MySqlCommand(query, sqlConnection)
+            {
+                CommandTimeout = 60
+            };
             MySqlDataReader dataReader;
 
             try
@@ -55,8 +57,10 @@ namespace Controller
         public List<Consola> GetConsolas()
         {
             string query = "SELECT * FROM Consolas";
-            MySqlCommand command = new MySqlCommand(query, sqlConnection);
-            command.CommandTimeout = 60;
+            MySqlCommand command = new MySqlCommand(query, sqlConnection)
+            {
+                CommandTimeout = 60
+            };
             MySqlDataReader dataReader;
 
             try
@@ -104,8 +108,10 @@ namespace Controller
                                                 ",`Usuario`=" + "'" + consola.Usuario + "'" +
                                                 ",`Password`=" + "'" + consola.Password + "'" +
                                                 $" WHERE Id ={Id}";
-            MySqlCommand command = new MySqlCommand(query, sqlConnection);
-            command.CommandTimeout = 60;
+            MySqlCommand command = new MySqlCommand(query, sqlConnection)
+            {
+                CommandTimeout = 60
+            };
             MySqlDataReader dataReader;
             try
             {
@@ -129,8 +135,10 @@ namespace Controller
         public void DelConsola(int Id)
         {
             string query = $"DELETE FROM Consolas WHERE Id={Id}";
-            MySqlCommand command = new MySqlCommand(query, sqlConnection);
-            command.CommandTimeout = 60;
+            MySqlCommand command = new MySqlCommand(query, sqlConnection)
+            {
+                CommandTimeout = 60
+            };
             MySqlDataReader dataReader;
             try
             {
@@ -151,9 +159,11 @@ namespace Controller
         }
         public void InsertConsola(Consola Newconsola)
         {                                                                                                                                                                                    //Model,             Serial,              Ip,               FechaCompra,                HorasTrabajo               HorasTrabajo,Metadata,  ImagenConsola,                Status,              Nombre,               usuario,               Password
-            string query = $"INSERT INTO `consolas` (`Model`, `Serial`, `Ip`, `FechaCompra`, `HorasTrabajo`, `Metadata`, `ImagenConsola`, `Status`, `Nombre`, `Usuario`, `Password`) VALUES ('{Newconsola.Model}','{Newconsola.Serial}','{Newconsola.Ip}','{Newconsola.FechaCompra.ToString("yyyy-MM-dd hh:mm:ss")}','{Newconsola.HorasTrabajo}','{Newconsola.Metadata}','{Newconsola.ImagenConsola}','{Newconsola.Status}','{Newconsola.Nombre}','{Newconsola.Usuario}','{Newconsola.Password}')";
-            MySqlCommand command = new MySqlCommand(query, sqlConnection);
-            command.CommandTimeout = 60;
+            string query = $"INSERT INTO `consolas` (`Model`, `Serial`, `Ip`, `FechaCompra`, `HorasTrabajo`, `Metadata`, `ImagenConsola`, `Status`, `Nombre`, `Usuario`, `Password`) VALUES ('{Newconsola.Model}','{Newconsola.Serial}','{Newconsola.Ip}','{Newconsola.FechaCompra:yyyy-MM-dd hh:mm:ss}','{Newconsola.HorasTrabajo}','{Newconsola.Metadata}','{Newconsola.ImagenConsola}','{Newconsola.Status}','{Newconsola.Nombre}','{Newconsola.Usuario}','{Newconsola.Password}')";
+            MySqlCommand command = new MySqlCommand(query, sqlConnection)
+            {
+                CommandTimeout = 60
+            };
             MySqlDataReader reader;
             try
             {
@@ -176,19 +186,21 @@ namespace Controller
         }
         public Consola ObjBuilder(MySqlDataReader dataReader)
         {
-            Consola consola = new Consola();
-            consola.Id = dataReader.GetInt32(0);
-            consola.Model = dataReader.GetString(1);
-            consola.Serial = dataReader.GetString(2);
-            consola.Ip = dataReader.GetString(3);
-            consola.FechaCompra = DateTime.Parse(dataReader.GetString(4));
-            consola.HorasTrabajo = double.Parse(dataReader.GetString(5));
-            consola.Metadata = dataReader.GetString(6);
-            consola.ImagenConsola = dataReader.GetString(7);
-            consola.Status = dataReader.GetString(8);
-            consola.Nombre = dataReader.GetString(9);
-            consola.Usuario = dataReader.GetString(10);
-            consola.Password = dataReader.GetString(11);
+            Consola consola = new Consola
+            {
+                Id = dataReader.GetInt32(0),
+                Model = dataReader.GetString(1),
+                Serial = dataReader.GetString(2),
+                Ip = dataReader.GetString(3),
+                FechaCompra = DateTime.Parse(dataReader.GetString(4)),
+                HorasTrabajo = double.Parse(dataReader.GetString(5)),
+                Metadata = dataReader.GetString(6),
+                ImagenConsola = dataReader.GetString(7),
+                Status = dataReader.GetString(8),
+                Nombre = dataReader.GetString(9),
+                Usuario = dataReader.GetString(10),
+                Password = dataReader.GetString(11)
+            };
             return consola;
         }
     }

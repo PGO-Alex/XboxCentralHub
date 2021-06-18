@@ -1,0 +1,51 @@
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Xbox Central Hub.exe.config
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Xbox Central Hub.exe
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Xbox Central Hub.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Controller.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\FontAwesome.Sharp.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Models.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\MySql.Data.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Google.Protobuf.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Zstandard.Net.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Ubiety.Dns.Core.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\System.Memory.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\System.Buffers.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\System.Numerics.Vectors.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Controller.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Controller.dll.config
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Models.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\MySql.Data.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.csprojAssemblyReference.cache
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.CustomControls.AlertRow.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.CustomControls.ColorOption.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.CustomControls.ConsoleListItem.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.forms.AboutApp.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.forms.AddConsoleForm.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.forms.EditConsole.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.forms.SettingsView.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.XboxCentralHub.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.Properties.Resources.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.csproj.GenerateResource.cache
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.csproj.CoreCompileInputs.cache
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.csproj.CopyComplete
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\Xbox Central Hub.exe
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\Xbox Central Hub.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\obj\Release\MainView.CustomControls.ImageListItem.resources
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\itext.layout.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\itext.kernel.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\itext.io.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Common.Logging.Core.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Common.Logging.dll
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\itext.layout.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\itext.kernel.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\BouncyCastle.Crypto.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\itext.io.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Common.Logging.Core.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Common.Logging.Core.xml
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Common.Logging.pdb
+C:\Users\AlejandroPC\Desktop\C#\XboxCentralHub\MainView\bin\Release\Common.Logging.xml

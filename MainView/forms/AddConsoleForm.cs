@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Models.Class;
 using Controller.Class;
 using Controller;
+using MainView.Properties;
 
 namespace MainView.forms
 {
@@ -17,6 +18,9 @@ namespace MainView.forms
         public string PassWord;
         public char PassChar;
         public string newImagePath = "";
+        public Color colorT = Settings.Default.SettingTextColor;
+        public Color colorB = Settings.Default.SettingBackColor;
+
         public AddConsoleForm()
         {
             InitializeComponent();
@@ -24,6 +28,7 @@ namespace MainView.forms
             DateBox.Value = DateTime.Now;
             HWBox.ReadOnly = true;
             HWBox.Enabled = false;
+            this.Icon = Resources.gamepad128;
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
@@ -139,14 +144,14 @@ namespace MainView.forms
                 || MetadataBox.Text == "")
             {
                 SaveConsoleButton.Enabled = false;
-                SaveConsoleButton.BackColor = Color.White;
-                SaveConsoleButton.ForeColor = Color.Black;
+                SaveConsoleButton.BackColor = colorB;
+                SaveConsoleButton.ForeColor = colorT;
             }
             else
             {
                 SaveConsoleButton.Enabled = true;
-                SaveConsoleButton.BackColor = Color.Black;
-                SaveConsoleButton.ForeColor = Color.White;
+                SaveConsoleButton.BackColor = colorT;
+                SaveConsoleButton.ForeColor = colorB;
             }
         }
 
