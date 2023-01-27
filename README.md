@@ -2,7 +2,7 @@
 
 A Desktop APP for manage xbox rent in some minor business on mexico
 
-This app is runs on .Net Framework 4.7, is builded with full C# and their use is focused on windows platform
+This app run on .Net Framework 4.7, is builded with full C# and their use is focused on windows platform
 
 to run this app you need to build it with Visual studio 19(preferently)
 
